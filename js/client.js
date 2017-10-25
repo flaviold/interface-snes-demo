@@ -2,17 +2,6 @@ var game;
 var settings;
 var GUI;
 
-function httpGetAsync(theUrl, callback)
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function() { 
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            callback(xmlHttp.responseText);
-    }
-    xmlHttp.open("GET", theUrl, true); // true for asynchronous 
-    xmlHttp.send(null);
-}
-
 function connect(actions) {
 	var uri = "ws://200.137.66.3:8000/browser/";
 	socket = new WebSocket(uri);
