@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teste</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="http://200.137.66.3:8000/css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center hidden">sendo modificado, qualquer problema pode estar sendo causado pelas modificações</div>
+      </div>
+      <div class="row hidden">
+        <div class="col-md-12 text-center">
+          <label>Player 1: </label>
+          <select id="p1-sel">
+            <option value="">-</option>
+            <option value="0">Ryu</option>
+            <option value="1">Honda</option>
+            <option value="2">Blanka</option>
+            <option value="3">Guile</option>
+          </select>
+          <label>Player 2: </label>
+          <select id="p2-sel">
+            <option value="">-</option>
+          </select>
+          <label>Nível:</label>
+          <select id="lvl-sel">
+            <option value="">-</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div id="error" class="col-md-12 text-center text-danger"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12"><br>
+          <canvas id="viewport" width="256px" height="224px"></canvas><br><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 id="result" class="hidden"></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+          <button id="start-experiment" class="btn btn-primary btn-block">Iniciar Experimento</button>
+        </div>
+        <div class="col-md-3">
+          <button id="stop-experiment" class="btn btn-danger btn-block">Parar Experimento</button>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+    <script src="http://200.137.66.3:8000/js/THREEx.KeyboardState.js"></script>
+    <script src="http://200.137.66.3:8000/js/dat.gui.min.js"></script>
+    <script src="http://200.137.66.3:8000/js/settings.js"></script>
+    <script src="http://200.137.66.3:8000/js/game.js"></script>
+    <script src="http://200.137.66.3:8000/js/client.js"></script>
+  </body>
+</html>
